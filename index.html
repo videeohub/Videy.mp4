@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEY</title>
+    <script>
+        // Proteksi Inspect Element
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('keydown', event => {
+            if (
+                event.ctrlKey && 
+                (event.key === 'u' || event.key === 'U' || event.key === 's' || event.key === 'S' || 
+                 event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J' || 
+                 event.key === 'c' || event.key === 'C') || 
+                event.key === 'F12'
+            ) {
+                event.preventDefault();
+            }
+        });
+        
+        function goToAdsterra() {
+            var url = atob("aHR0cHM6Ly9iYWNrcGFja2hhbnMuY29tL3lod3hpcTByaTQ/a2V5PWE5N2Q0ZGNiMTlhYTE1ODE3OGExMmMzNzQzNTVhNjMz");
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <!-- Histats -->
+    <script type="text/javascript">
+        var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4922497,4,0,0,0,00010000']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+            var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+            hs.src = ('//s10.histats.com/js15_as.js');
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();
+    </script>
+    <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4922497&101" alt="" border="0"></a></noscript>
+    
+    <!-- Banner Iklan -->
+    <h3>Jangan Lewatkan! Kesempatan Emas Menanti Anda!</h3>
+    <a href="javascript:void(0);" onclick="goToAdsterra()">
+        <img src="https://i.imgur.com/lbizztn.jpeg" alt="Iklan Menarik" width="300">
+    </a>
+    
+    <br><br>
+    
+    <!-- Tombol ke video -->
+    <a href="" style="display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Tonton Video</a>
+</body>
+</html>
